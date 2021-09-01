@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 
-const port = 1337;
+const port = 80;
 app.use('/cdn/', express.static('cdn'));
 app.set('view-engine', 'pug')
 app.get('/', (req, res) => res.render("index.ejs"));
